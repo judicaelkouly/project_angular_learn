@@ -1,0 +1,105 @@
+{
+  "users": [
+    {
+      "id": 1794409958406,
+      "name": "Lorem Ipsum",
+      "email": "jude@gmail.com",
+      "passwordHash": "$2b$10$oj8ie806xH8IGGZPcAwizODDQ8tyGCgx5SiaJ6e2reJhZZNIMyPkS"
+    },
+    {
+      "id": 1794487367335,
+      "name": "Mistacke Israel",
+      "email": "israel@gmail.com",
+      "passwordHash": "$2b$10$YB6QTCrk0fslkClytZ4MyuO4H6Ir4qNFIyuaoJQV0P/38ZtaYsOsi"
+    },
+    {
+      "id": 1794835950845,
+      "name": "Mohamed Ali",
+      "email": "ali@gmail.com",
+      "passwordHash": "$2b$10$5XPkG4vgY95pJeeY64Xk9eBTSeoGXR6ZtpCqkxN1j4xAsxU/2jAkK"
+    }
+  ],
+  "articles": [
+    {
+      "title": "L'IA et l'avenir",
+      "content": "L'intelligence artificielle (IA) transforme déjà notre quotidien, et elle redéfinira profondément le travail, la santé, l'éducation et la vie quotidienne au cours des prochaines décennies. Cette évolution promet des avancées majeures, tout en soulevant des défis éthiques, économiques et sociaux importants.",
+      "img": "http://localhost:3000/uploads/1794410646504-81165593.jpeg",
+      "authorId": 1794409958406,
+      "authorName": "Lorem Ipsum",
+      "createdAt": "2026-11-11T15:24:06.514Z",
+      "id": 4
+    },
+    {
+      "title": "Les affaires internationales",
+      "content": "Les affaires internationales désignent l'ensemble des relations, des échanges et des interactions politiques, économiques, juridiques et culturelles qui se déploient au-delà des frontières nationales. Ce domaine d'étude et de pratique analyse la manière dont le monde s'organise face à l'interdépendance croissante des sociétés. Il repose sur trois piliers fondamentaux : la géopolitique et la diplomatie (gestion des alliances, négociation de traités et résolution des conflits), l'économie mondiale (commerce international, flux financiers, investissements et chaînes d'approvisionnement) et le droit international (règles communes encadrant la souveraineté, le commerce et les droits humains). Bien que les États souverains demeurent les décideurs centraux via leur politique étrangère, ils partagent désormais la scène mondiale avec de puissants acteurs non étatiques tels que les organisations internationales (ONU, Union africaine, OMC), les entreprises multinationales et les organisations non gouvernementales (ONG). Aujourd'hui, les affaires internationales sont profondément transformées par trois défis majeurs : l'émergence d'un monde multipolaire qui redéfinit les rapports de force traditionnels, l'urgence de la transition écologique qui impose une coopération climatique sans précédent, et la révolution numérique qui soulève des enjeux stratégiques de cybersécurité et de gouvernance de l'intelligence artificielle. En somme, maîtriser les affaires internationales est essentiel pour comprendre les crises contemporaines, anticiper les mutations économiques et élaborer des solutions collectives aux problèmes globaux qu'aucune nation ne peut résoudre isolément.",
+      "img": "http://localhost:3000/uploads/1794410936573-362547471.jpeg",
+      "authorId": 1794409958406,
+      "authorName": "Lorem Ipsum",
+      "createdAt": "2026-11-11T15:28:56.575Z",
+      "id": 5
+    },
+    {
+      "title": "Lamine Yamal",
+      "content": "Né le 13 juillet 2007 à Esplugues de Llobregat en Espagne, Lamine Yamal Nasraoui Ebana s'est imposé en un temps record comme l'un des phénomènes les plus précoces et brillants de l'histoire du football mondial. Formé à La Masia, le prestigieux centre de formation du FC Barcelone qu'il intègre dès l'âge de sept ans, cet ailier droit gaucher se distingue par une technique hors norme, une vision du jeu chirurgicale, une capacité d'élimination déroutante et une maturité tactique exceptionnelle. Il fait ses débuts professionnels avec l'équipe première catalane en avril 2023 à seulement 15 ans et 9 mois, devenant le plus jeune joueur de l'histoire du club en championnat. Très vite titulaire indiscutable, il hérite du mythique numéro 10 de Lionel Messi et porte l'attaque blaugrana vers les sommets. En club, il a déjà enrichi son palmarès de trois titres de champion d'Espagne (2023, 2025, 2026), d'une Coupe du Roi (2025) et de deux Supercoupes d'Espagne (2025, 2026).\r\nSur la scène internationale, son ascension est tout aussi fulgurante avec la sélection espagnole, la Roja. Révélation majeure et meilleur jeune joueur de l'Euro 2024 remporté par l'Espagne, il bat tous les records de précocité en devenant le plus jeune buteur de l'histoire de la compétition à 16 ans. Il confirme ensuite son statut de leader offensif en remportant la Ligue des nations 2025, puis en soulevant la Coupe du Monde 2026 à tout juste 19 ans. Ces exploits collectifs s'accompagnent d'une pluie de récompenses individuelles inédites pour son âge : vainqueur du Golden Boy 2024, élu meilleur joueur de La Liga 2025-2026, il devient le premier joueur de l'histoire à remporter trois Trophées Kopa consécutifs (2024, 2025, 2026) et monte sur la troisième marche du podium du Ballon d'Or 2026. En novembre 2026, il entre encore un peu plus dans la légende en devenant le premier footballeur sélectionné deux fois dans le onze mondial FIFPRO World XI avant l'âge de vingt ans, confirmant qu'il incarne déjà le présent et le futur du football mondial.",
+      "img": "http://localhost:3000/uploads/1794411123286-428084212.jpeg",
+      "authorId": 1794409958406,
+      "authorName": "Lorem Ipsum",
+      "createdAt": "2026-11-11T15:32:03.289Z",
+      "id": 6
+    },
+    {
+      "title": "Côte d'Ivoire, la jeunesse au bord de la ...?",
+      "content": "La jeunesse ivoirienne, qui représente plus de 75 % de la population nationale avec une forte proportion de moins de 35 ans, constitue le principal moteur démographique et l'atout majeur de la Côte d'Ivoire, tout en étant confrontée à des défis structurels importants pour son insertion socio-économique. Sur le plan éducatif, malgré les réformes gouvernementales visant à améliorer la qualité des apprentissages fondamentaux, le système scolaire peine encore à offrir des résultats optimaux, comme en témoigne un taux de réussite au baccalauréat plafonnant autour de 40 %, ainsi qu'une inadéquation persistante entre les formations dispensées et les besoins réels du marché du travail. Cette situation rejaillit directement sur l'emploi : bien que le taux de chômage officiel demeure statistiquement faible (autour de 2,3 % à 3,1 %), la réalité quotidienne de la majorité des jeunes actifs est marquée par le sous-emploi, la précarité et le recours massif au secteur informel ou à l'auto-emploi par nécessité, faute d'une offre suffisante d'emplois salariés formels pour absorber les centaines de milliers de nouveaux arrivants chaque année. Face à ces disparités, particulièrement prononcées entre les centres urbains comme Abidjan et les zones rurales, l'État multiplie les initiatives de soutien, à l'image du Programme Jeunesse du Gouvernement (PJGouv), de la Carte Jeunes destinée à alléger le coût de la vie des 15-40 ans, ou encore du Fonds d'appui aux organisations de jeunesse doté de 4,3 milliards de francs CFA pour stimuler l'entrepreneuriat et la vie associative dans des secteurs porteurs tels que le numérique, le BTP et l'agro-industrie. Parallèlement à ces défis économiques, cette génération connectée, dynamique et créative aspire à une plus grande inclusion citoyenne et à une participation accrue aux prises de décisions politiques, faisant de la réussite de son autonomisation la condition indispensable de la stabilité et de l'émergence durable du pays.\r\n",
+      "img": "http://localhost:3000/uploads/1794411317332-975456704.jpeg",
+      "authorId": 1794409958406,
+      "authorName": "Lorem Ipsum",
+      "createdAt": "2026-11-11T15:35:17.334Z",
+      "id": 7
+    },
+    {
+      "title": "UVCI piratée !?",
+      "content": "Début novembre 2026, une alerte de cybersécurité a révélé la mise en ligne sur un forum cybercriminel d'une base de données SQL de 8,72 Go attribuée au sous-domaine pédagogique licences3.uvci.online de l'Université Virtuelle de Côte d'Ivoire (UVCI). Selon l'analyse technique publiée par le consultant en renseignement sur les cybermenaces Adama Assiongbon et relayée par le média spécialisé CyberC4st, cette archive regrouperait 490 tables pour un total d'environ 56,7 millions d'enregistrements, un volume principalement gonflé par plus de 16 millions de journaux techniques issus de la plateforme Moodle. Toutefois, le fichier contiendrait des informations particulièrement sensibles concernant les membres de l'institution, notamment 6 993 comptes utilisateurs, des adresses e-mail institutionnelles, des adresses IP, 47 553 lignes de résultats académiques ainsi que plus de 30 000 messages privés. Plus préoccupant encore, l'analyse technique signale la présence de 2 972 mots de passe d'inscription potentiellement stockés en clair sans aucun chiffrement, accompagnés de 154 tokens d'authentification externes et de 4 635 clés privées utilisateur. Malgré la gravité de ces révélations, l'incident n'a pas encore fait l'objet d'un communiqué officiel de la part de l'administration de l'UVCI pour confirmer l'intrusion ou l'authenticité des données, tandis que certaines pages d'information sur les réseaux sociaux ivoiriens qualifient la nouvelle de fausse information. Dans l'attente d'une clarification officielle de l'université, il est fortement recommandé aux étudiants, enseignants et membres du personnel de changer immédiatement leurs mots de passe institutionnels, d'éviter toute réutilisation de ces identifiants sur d'autres services personnels et de redoubler de vigilance face aux tentatives d'hameçonnage imitant l'administration.",
+      "img": "http://localhost:3000/uploads/1794411820033-370039940.png",
+      "authorId": 1794409958406,
+      "authorName": "Lorem Ipsum",
+      "createdAt": "2026-11-11T15:43:40.043Z",
+      "id": 8
+    },
+    {
+      "title": "Développement et de l'autonomie de la Chine",
+      "content": "Une puissance industrielle et technologique de premier plan\r\nSelon la Banque mondiale et le Fonds monétaire international (FMI), la Chine est la deuxième puissance économique mondiale en PIB nominal et la première en parité de pouvoir d'achat (PPA). Elle a réussi à sortir près de 800 millions de personnes de l'extrême pauvreté en quatre décennies. Sur le plan de l'indépendance, Pékin a bâti une autonomie quasi totale dans de nombreuses chaînes de valeur stratégiques. Le pays domine aujourd'hui la production mondiale des énergies renouvelables (panneaux solaires, éoliennes), des batteries, des véhicules électriques et des télécommunications (5G), soutenu par des investissements massifs en recherche et développement qui rivalisent directement avec ceux des États-Unis.\r\nDes limites économiques et sociales qui freinent son statut\r\nMalgré ces performances globales, la Chine reste classée parmi les pays à revenu intermédiaire de la tranche supérieure par les institutions internationales. Son PIB par habitant demeure nettement inférieur à celui des économies occidentales (environ six fois inférieur à celui des États-Unis). Le développement du pays est également très inégal : les mégapoles côtières (Shanghai, Pékin, Shenzhen) affichent un niveau de vie et des infrastructures ultra-modernes, tandis que les zones rurales et l'intérieur des terres accusent un retard significatif. De plus, l'économie chinoise traverse une phase de ralentissement liée à la crise prolongée de son secteur immobilier, à un endettement élevé des collectivités locales et à une faible consommation intérieure.\r\nUne indépendance encore relative face au reste du monde\r\nL'autonomie de la Chine n'est pas absolue. Sur le plan économique, sa croissance dépend toujours fortement de ses exportations vers les marchés occidentaux et mondiaux, ce qui la rend vulnérable aux barrières douanières et aux tensions géopolitiques. Sur le plan technologique, bien qu'elle progresse rapidement, elle reste encore dépendante des technologies étrangères pour certains composants critiques, comme les semi-conducteurs les plus avancés et l'aéronautique civile. Enfin, le pays fait face à des défis structurels majeurs, notamment un vieillissement rapide de sa population et une baisse démographique qui pèseront durablement sur sa main-d'œuvre et son système social.",
+      "img": "http://localhost:3000/uploads/1794486086486-956205190.jpeg",
+      "authorId": 1794409958406,
+      "authorName": "Lorem Ipsum",
+      "createdAt": "2026-11-12T00:50:30.726Z",
+      "id": 9
+    },
+    {
+      "title": "UVCI théorie ou pratique",
+      "content": "À l’Université Virtuelle de Côte d'Ivoire (UVCI), l’enseignement combine théorie et pratique, mais il est fortement orienté vers la pratique et la professionnalisation selon l'approche learning by doing (apprendre en faisant). Concrètement, la théorie est dispensée à distance sur une plateforme numérique via des capsules vidéo, des cours PDF et des webinaires hebdomadaires pour poser les bases conceptuelles. Cependant, chaque semaine de cours est immédiatement validée par des travaux dirigés, des exercices techniques et des devoirs obligatoires à rendre en ligne. L'étudiant passe ainsi la majeure partie de son temps sur son ordinateur à développer des applications, concevoir des projets multimédias, administrer des réseaux ou suivre des ateliers de certification. Le parcours est également ponctué de projets tutorés en équipe, de modules d'entrepreneuriat, de stages obligatoires en entreprise et de soutenances devant jury, tandis que les examens de fin de semestre se déroulent en présentiel dans des centres agréés pour garantir la valeur des diplômes. En somme, bien que virtuelle, l'UVCI offre une formation très concrète conçue pour rendre les diplômés directement opérationnels sur le marché de l'emploi.\r\n",
+      "img": "http://localhost:3000/uploads/1794487688273-325854382.jpeg",
+      "authorId": 1794487367335,
+      "authorName": "Mistacke Israel",
+      "createdAt": "2026-11-12T12:46:43.692Z",
+      "id": 10
+    },
+    {
+      "title": "Les lampadaires intelligents anti-inondation à Abidjan : Concept et Perspectives",
+      "content": "Le lampadaire intelligent détecteur d'inondation est une innovation urbaine qui transforme le mobilier d'éclairage public en une station d'alerte environnementale en temps réel. Techniquement, le dispositif repose sur l'intégration de capteurs (à ultrasons, radar ou de pression) directement sur le mât ou dans les caniveaux adjacents pour mesurer la montée des eaux. Dès qu'un seuil critique est atteint, le lampadaire déclenche une alerte visuelle (clignotement lumineux rouge ou orange) et sonore pour avertir immédiatement les automobilistes et les piétons du danger sur la chaussée. Parallèlement, via des réseaux sans fil basse consommation (comme LoRaWAN, NB-IoT ou la 4G), il transmet ces données aux centres de secours (tels que l'ONPC) et aux applications de navigation routière. À Abidjan, où les pluies diluviennes provoquent régulièrement des crues soudaines dans des zones critiques comme le carrefour de l'Indénié, la Riviera Palmeraie ou Yopougon, cette technologie offre un potentiel considérable. Bien que les initiatives locales soient aujourd'hui cloisonnées — entre le déploiement de lampadaires connectés au Plateau (lancé en février 2026 pour la télégestion énergétique), la surveillance météorologique globale assurée par le radar de la SODEXAM, et les prototypes IoT développés par des startups ou des écoles d'ingénieurs (ESATIC, INP-HB) — la convergence de ces outils est particulièrement pertinente. L'avantage majeur d'une telle intégration réside dans la cartographie ultra-précise et rue par rue des zones impraticables, couplée à l'autonomie énergétique qu'offrent les lampadaires solaires abidjanais, garantissant ainsi le maintien des alertes même lors des coupures d'électricité générales liées aux orages.",
+      "img": "http://localhost:3000/uploads/1794836273084-225140645.jpeg",
+      "authorId": 1794835950845,
+      "authorName": "Mohamed Ali",
+      "createdAt": "2026-11-16T13:36:52.874Z",
+      "id": 11
+    },
+    {
+      "title": "La Côte d'Ivoire face à sa dette publique : bilan chiffré et perspectives (2025-2026)",
+      "content": "À fin juin 2026, l'encours de la dette publique de la Côte d'Ivoire s'établit à 36 087,6 milliards de FCFA, ce qui représente 57,9 % du Produit Intérieur Brut (PIB) (contre 33 159,2 milliards de FCFA, soit 57,1 % du PIB, à fin 2025). Ce niveau demeure confortablement inférieur de 12,1 points au plafond communautaire de 70 % fixé par l'UEMOA, tandis que l'économie franchit en 2026 le cap historique d'un PIB nominal supérieur à 100 milliards de dollars (environ 110,45 milliards USD) porté par une croissance projetée à 6,0 %. Sur le plan structurel, l'endettement reste dominé par les engagements extérieurs — évalués à 21 736,6 milliards de FCFA au premier trimestre 2026, contre 13 145,7 milliards de FCFA pour la dette intérieure — exposant 52,7 % du portefeuille au risque de change. Pour maîtriser ce profil coût-risque et financer les projets structurants du Plan National de Développement (PND), l'État déploie une gestion active de ses passifs combinant des opérations de couverture de change (swaps Euro-Dollar) et des levées de fonds compétitives sur les marchés internationaux. En témoigne le succès de l'Eurobond à 15 ans émis en février 2026 pour 1,3 milliard de dollars, sursouscrit près de cinq fois (6,3 milliards USD de demande) à un taux attractif de 5,39 %. Cette rigueur budgétaire, illustrée par un excédent de trésorerie de 369 milliards de FCFA enregistré en 2025 grâce à des recettes dépassant les prévisions (15 654 milliards de FCFA), a conduit le Fonds Monétaire International (FMI) à reclasser en juin 2026 la Côte d'Ivoire en catégorie de « risque faible » de surendettement, une première en Afrique subsaharienne, avec une trajectoire visant à ramener la dette autour de 45 % du PIB d'ici 2031. Toutefois, le principal défi demeure la pression immédiate exercée par le service de la dette — qui mobilise environ un quart du budget annuel de l'État — ainsi que la nécessité d'accélérer le décaissement des financements extérieurs pour les infrastructures sociales et la transformation locale des matières premières.",
+      "img": "http://localhost:3000/uploads/1794836727348-928381957.webp",
+      "authorId": 1794835950845,
+      "authorName": "Mohamed Ali",
+      "createdAt": "2026-11-16T13:45:27.350Z",
+      "id": 12
+    }
+  ]
+}

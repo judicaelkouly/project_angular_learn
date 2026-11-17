@@ -1,0 +1,37 @@
+<div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+<form [formGroup]="form" class="flex flex-col gap-2.5 max-w-[350px] bg-white p-5 rounded-[20px] relative shadow-lg">
+    <!-- Titre avec effet de points animés -->
+    <h2 class="text-[28px] text-royalblue font-semibold tracking-[-1px] relative flex items-center pl-[30px] mb-2">
+        <span class="absolute left-0 w-[18px] h-[18px] rounded-full bg-blue-600"></span>
+        <span class="absolute left-0 w-[18px] h-[18px] rounded-full bg-blue-600 animate-pulse-custom"></span>
+        Se connecter
+    </h2>
+
+    <p class="text-gray-500/80 text-sm">Se connecter à votre compte</p>
+
+
+    <!-- Email -->
+    <label class="relative">
+        <input formControlName="email" class="w-full pt-[22px] pb-[8px] px-2.5 outline-none border border-gray-400/40 rounded-[10px] text-sm peer" type="email" placeholder="" required />
+        <span class="absolute left-2.5 top-[15px] text-gray-500 text-[0.9em] cursor-text transition-all duration-300 ease-in-out peer-placeholder-shown:top-[15px] peer-placeholder-shown:text-[0.9em] peer-focus:top-1 peer-focus:text-[0.7em] peer-focus:font-semibold peer-valid:top-1 peer-valid:text-[0.7em] peer-valid:font-semibold peer-valid:text-green-600">Email</span>
+    </label>
+
+    <!-- Mot de passe -->
+    <label class="relative">
+        <input formControlName="password" class="w-full pt-[22px] pb-[8px] px-2.5 outline-none border border-gray-400/40 rounded-[10px] text-sm peer" type="password" placeholder="" required />
+        <span class="absolute left-2.5 top-[15px] text-gray-500 text-[0.9em] cursor-text transition-all duration-300 ease-in-out peer-placeholder-shown:top-[15px] peer-placeholder-shown:text-[0.9em] peer-focus:top-1 peer-focus:text-[0.7em] peer-focus:font-semibold peer-valid:top-1 peer-valid:text-[0.7em] peer-valid:font-semibold peer-valid:text-green-600">Password</span>
+    </label>
+
+
+    <!-- Bouton de soumission -->
+    <button (click)="onSubmit()" type="submit" class="border-none outline-none bg-blue-600 hover:bg-[rgb(56,90,194)] transition-all duration-300 p-2.5 rounded-[10px] text-white text-base cursor-pointer mt-2">
+        Se connecter
+    </button>
+
+    <!-- Lien de connexion -->
+    <p class="text-gray-500/80 text-sm text-center mt-2">
+        Pas de compte ? <a routerLink="/register" class="text-blue-600 hover:underline">S'inscrire</a>
+    </p>
+</form>
+</div>
+

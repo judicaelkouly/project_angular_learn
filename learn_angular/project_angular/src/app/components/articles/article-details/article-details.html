@@ -1,0 +1,53 @@
+<div class="bg-slate-50 dark:bg-slate-950 min-h-screen flex flex-col justify-between">
+  <!-- Navbar -->
+  <div class="bg-white dark:bg-slate-900 shadow-sm">
+    <app-navbar></app-navbar>
+  </div>
+
+  @if (article(); as post) {
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+          <!-- Colonne de gauche : Titre & Contenu -->
+          <div class="lg:col-span-7 xl:col-span-8 flex flex-col justify-center">
+            <div class="space-y-6">
+              <h1 class="text-xl sm:text-xl lg:text-2xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+                {{ post.title }}
+              </h1>
+              <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed whitespace-pre-line">
+                {{ post.content }}
+              </p>
+            </div>
+          </div>
+
+          <!-- Colonne de droite : Image et Encart flottant -->
+          <div class="lg:col-span-5 xl:col-span-4 relative">
+            <div class="relative h-[380px] sm:h-[420px] w-full rounded-2xl overflow-hidden shadow-xl">
+              <img
+                [src]="post.img"
+                [alt]="post.title"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
+            </div>
+
+            <!-- Encart d'information flottant -->
+            <div class="relative -mt-16 mx-6 z-10 bg-white dark:bg-slate-900 rounded-xl shadow-lg border border-slate-100 dark:border-slate-800 p-6">
+              <span class="text-xs font-semibold tracking-wider text-emerald-600 uppercase">Article vedette</span>
+              <h2 class="text-xl font-bold text-slate-900 dark:text-white mt-1 line-clamp-2">
+                {{ post.title }}
+              </h2>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  }
+
+  <!-- Footer -->
+  <div class="bg-white dark:bg-slate-900 mt-auto border-t border-slate-200 dark:border-slate-800">
+    <app-footer></app-footer>
+  </div>
+</div>

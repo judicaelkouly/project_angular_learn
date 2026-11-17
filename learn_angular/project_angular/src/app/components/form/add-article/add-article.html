@@ -1,0 +1,85 @@
+<div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="bg-white text-gray-500 max-w-[400px] mx-auto p-6 text-left text-sm rounded-lg border border-gray-300/60 shadow-md">
+  <h2 class="text-2xl font-semibold text-center text-gray-700 mb-4">Ajouter un article</h2>
+
+    <!-- Titre de l'article -->
+    <label class="font-medium text-gray-700" for="title">Titre de l'article</label>
+    <input
+        id="title"
+        formControlName="title"
+        class="w-full border mt-1.5 mb-4 border-gray-500/30 outline-none rounded py-2.5 px-3 focus:border-indigo-500 transition"
+        type="text"
+        placeholder="Enter title">
+    @if (form.controls.title.touched && form.controls.title.invalid) {
+        <p class="text-xs text-red-500 -mt-3 mb-4">Le titre est requis (100 caractères maximum).</p>
+    }
+
+    <!-- Contenu de l'article -->
+    <label class="font-medium text-gray-700" for="content">Description</label>
+    <textarea
+        rows="3"
+        id="content"
+        formControlName="content"
+        class="w-full resize-none border mt-1.5 mb-4 border-gray-500/30 outline-none rounded py-2.5 px-3 focus:border-indigo-500 transition"
+        placeholder="Article description"></textarea>
+    @if (form.controls.content.touched && form.controls.content.invalid) {
+        <p class="text-xs text-red-500 -mt-3 mb-4">La description est requise.</p>
+    }
+
+    <!-- Cadre d'upload d'image (affiché dynamiquement) -->
+    @if (showImageUploader()) {
+        <div class="mb-4 transition-all">
+            <label class="font-medium text-gray-700 block mb-1.5">Article Image</label>
+            <div class="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center relative hover:border-indigo-500 transition cursor-pointer bg-gray-50">
+                <input type="file" (change)="onFileSelected($event)" accept="image/*" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full">
+
+                @if (imagePreview()) {
+                    <div class="relative">
+                        <img [src]="imagePreview()" alt="Preview" class="max-h-32 mx-auto rounded object-cover">
+                        <button type="button" (click)="removeImage($event)" class="absolute top-0 right-0 bg-red-500 text-white rounded-full p-1 text-xs hover:bg-red-600">
+                            ✕
+                        </button>
+                    </div>
+                } @else {
+                    <div class="flex flex-col items-center py-2">
+                        <svg class="w-8 h-8 text-gray-400 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        <p class="text-xs text-gray-500">Glissez une image ici ou <span class="text-indigo-600 font-medium">parcourez</span></p>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+
+    <!-- Message d'erreur (format d'image, taille, erreur serveur...) -->
+    @if (errorMessage()) {
+        <p class="mb-4 text-xs text-red-600 bg-red-50 border border-red-200 rounded px-3 py-2">
+            {{ errorMessage() }}
+        </p>
+    }
+
+    <!-- Barre d'actions (bouton Ajouter + icône image) -->
+    <div class="flex items-center justify-between pt-2 border-t border-gray-100">
+        <button
+            type="submit"
+            [disabled]="isSubmitting()"
+            class="bg-indigo-500 hover:bg-indigo-600 transition py-2 px-5 rounded text-white font-medium cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed">
+            {{ isSubmitting() ? 'Publication...' : "Ajouter l'article" }}
+        </button>
+
+        <div class="flex items-center space-x-1">
+
+            <!-- Bouton pour afficher/masquer l'uploader d'image -->
+            <button type="button" (click)="toggleImageUploader()" aria-label="addPicture" class="p-1.5 hover:bg-gray-100 rounded text-gray-600 transition cursor-pointer" [class.text-indigo-600]="showImageUploader()">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.51 10.625 8.365 9.49c-.526-.522-.79-.783-1.092-.88a1.33 1.33 0 0 0-.82 0c-.303.097-.566.358-1.092.88l-2.666 2.685m6.815-1.55.228-.226c.537-.532.806-.799 1.114-.896.27-.086.562-.082.831.01.306.104.569.376 1.094.921l.557.566m-3.824-.375 2.637 2.684m-9.452-1.134c.02.173.056.31.117.43.128.251.332.455.583.583.285.145.659.145 1.405.145h6.4c.415 0 .714 0 .947-.024m-9.452-1.134c-.028-.237-.028-.544-.028-.975V4.8c0-.747 0-1.12.145-1.405.128-.251.332-.455.583-.583.285-.145.659-.145 1.405-.145h2.534m4.813 10.642c.187-.02.332-.056.459-.121.25-.128.454-.332.582-.583.146-.285.146-.658.146-1.405V8.667M12 6V4m0 0V2m0 2h2m-2 0h-2" stroke="currentColor" stroke-opacity=".8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+</form>
+
+</div>
